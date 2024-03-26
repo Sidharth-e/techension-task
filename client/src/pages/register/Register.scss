@@ -1,0 +1,94 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .register-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+  
+    .register-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 80%;
+      height:100% ;
+      max-width: 400px;
+      margin-bottom: 20px;
+      h2{
+        font-size: x-large;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        input{
+            outline: none;
+            border: none;
+            padding: 20px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 8px;
+          }
+          button{
+            width: 100%;
+            font-weight: 500;
+            background-color: black ;
+            color: white;
+          }
+      }
+    }
+  
+    .login-button {
+        background-color: black;
+        color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 80%;
+      max-width: 400px; 
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      button{
+        width: 50%;
+        background-color: #f2f2f2;
+        color: black;
+      }
+    }
+  }
+  
+  /* Media query for screens with max width of 768px */
+  @media screen and (max-width: 768px) {
+    .register-container{
+      // height: 120vh;
+      .register-card {
+        flex-direction: column;
+        width: 85%;
+        height: 80%;
+        .register-form {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+        .login-button {
+         width: 100%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+  
+        }
+      }
+    }
+  }
+  

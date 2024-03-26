@@ -1,0 +1,78 @@
+.claim-form-uploader {
+  padding: 20px;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  
+    input[type="file"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+    }
+  
+    .file-uploader{
+      display: flex;
+      width: 20%;
+      justify-content: space-between;
+      botton{
+        margin-right: 10px;
+      }
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+        margin-left: 10px;
+      }
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .error-message {
+      color: red;
+      margin-top: 10px;
+    }
+  
+    .download-link {
+      margin-top: 10px;
+    }
+  
+    .field-mapping {
+      margin-top: 20px;
+  
+      select {
+        padding: 6px 10px;
+        border-radius: 4px;
+      }
+  
+      button {
+        margin-top: 10px;
+      }
+    }
+  
+    .modal {
+      .modal-header{
+        display: flex;
+      }
+  }
+}
+
+@media screen and (max-width:768px){
+  .claim-form-uploader{
+    .file-uploader{
+      width: 70%;
+    }
+  }
+}
+  
