@@ -18,14 +18,10 @@ app.use(express.json());
 app.use(cors());
 
 // routes
-// app.use("/api/register",registerRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/claims",verifyToken, claimsRoutes);
 
-// app.use("/api/waterIntake",verifyToken, watertrackerRoutes);
-// app.use("/api/workout",verifyToken, workoutRoutes);
-// app.use("/api/diet",verifyToken, dietRoutes);
 
 
 
